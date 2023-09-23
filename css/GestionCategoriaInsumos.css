@@ -1,0 +1,114 @@
+
+
+/*Agregar Insumos*/
+
+.contedorIns{
+    border: 1px solid #b9b9b9;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 500px;
+    background-color: #f8f8f8;
+}
+
+.btninsumos {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.btninsumos button{
+    padding: 10px 40px;
+    /* Ajusta el padding para hacer los botones más largos */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 25%;
+    /* Ajusta el ancho de los botones */
+}
+
+.espacioEntreBotones {
+    width: 40px;
+    /* Ajusta el ancho del espacio según tus preferencias */
+}
+
+.contForms{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconosRojos{
+    color: #E12424;
+}
+
+
+input::placeholder {
+    padding-left: 8px;
+}
+
+input{
+    border-radius: 3px;
+    border: 1px solid #6d6d6d;
+}
+
+.input1 input{
+    width: 300px;
+    height: 50px;
+}
+
+
+.input1 i{
+    font-size: 20px;
+}
+
+.parrafoGris{
+    color: gray;
+}
+
+.añadirImagen{
+    background-color: #6d6d6d;
+    height: 120px;
+    width: 200px;
+    border-radius: 3px;
+}
+
+.añadirImagen #imgPerfil{
+    text-align: center;
+}
+
+.contFormsAbajo{
+    display: flex;
+    justify-content: space-around;
+}
+
+#iconoEditar{
+    text-align: end;
+    margin-bottom: -28px;
+}
+
+.btnSinFondo {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#imgPerfil{
+    border-radius: 3px;
+}
+
+.contFormsAbajo1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-solid{
+    cursor: pointer;
+}
+#tablaInsumos thead th{
+    text-align: center;
+}
+#tablaInsumos tbody tr{
+    text-align: center;
+}

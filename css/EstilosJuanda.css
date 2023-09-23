@@ -1,0 +1,131 @@
+.contForms{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconosRojos{
+    color: #E12424;
+}
+
+.iconosMorados{
+    color: #722F37;
+}
+
+input::placeholder {
+    padding-left: 8px;
+}
+
+input{
+    border-radius: 3px;
+    border: 1px solid #6d6d6d;
+}
+
+.input1 input{
+    width: 300px;
+    height: 50px;
+}
+
+.inputCantidad{
+    margin-left: 24vh;
+}
+
+.inputCantidad input{
+    width: 120vh;
+    height: 50px;
+}
+
+.input1 i{
+    font-size: 20px;
+}
+
+.parrafoGris{
+    color: gray;
+}
+
+.añadirImagen{
+    background-color: #6d6d6d;
+    height: 120px;
+    width: 200px;
+    border-radius: 3px;
+}
+
+.añadirImagen #imgPerfil{
+    text-align: center;
+}
+
+.contFormsAbajo{
+    display: flex;
+    justify-content: space-around;
+}
+
+#iconoEditar{
+    text-align: end;
+    margin-bottom: -28px;
+}
+
+.btnSinFondo {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#imgPerfil{
+    border-radius: 3px;
+}
+
+#tablaInsumos td, #tablaInsumos th{
+    text-align: center;
+}
+
+
+.fa-solid{
+    cursor: pointer;
+}
+
+.fas{
+    cursor: pointer;
+}
+
+.cajaBotones button {
+    padding: 10px 40px;
+    /* Ajusta el padding para hacer los botones más largos */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    /* Ajusta el ancho de los botones */
+}
+
+ 
+.rojo{
+    background: #E12424;
+    color: white;
+
+  }
+  
+  .rojo:hover{
+    background: #f33928;
+  }
+  
+  .rojo:active{
+    box-shadow: 1px 1px 1px 1px #f33928;
+  }
+
+  .vinotinto{
+    background: #48110d;
+    color: white;
+  }
+  
+  .vinotinto:hover{
+    background: #771d17;
+    
+  }
+  
+  .vinotinto:active{
+    box-shadow: 1px 1px 1px 1px #771d17;
+  }
+
+#estado{
+    color: #48110d;  
+}

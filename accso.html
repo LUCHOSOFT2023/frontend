@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/gestionDeAcceso.css">
+    
+    <!-- Incluye la biblioteca de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluye la biblioteca de Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>LuchoSoft</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="barraPrincipal">
+    <div class="contenedor_1">
+   
+          <div class="imagen">
+            <img src="archivos/imagenes/LuchoGod.png" height="45px" lenght="45px">
+          </div>
+
+          <div class="centrar">
+            <p>LuchoSoft</p>
+        </div>
+
+
+    </div>
+</div>
+
+  <div class="contenido">
+    <center>
+  
+      <div id="titulo"><h1>Bienvenido</h1></div>
+        <div id="perfil">
+          <div id="imgPerfil"><img src="archivos/imagenes/Profile.png" height="70vh" lenght="70vh"></div>
+
+        </div>
+      </center>
+
+      <div class="divActualizarContraseña">
+        <form>
+            <div class="input-group">
+                <label for="contrasenaAntigua">Ingrese correo</label>
+                <input type="email" id="correoacceso" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirmarContrasena">Ingrese contraseña</label>
+                <input type="password" id="contrasenaacceso" required>
+            </div>
+            <div>
+              <label class="yellow-underline" onclick="window.location.href='RecuperarContraseña.html'">Recuperar contraseña</label>
+            </div>
+            <div class="cajaBotonesRegistro">
+                <button class="rojo" type="button" onclick="validacionacceso()">Acceder</button>
+            </div>
+        </form>
+    </div>
+
+
+  
+  </div>
+  
+</body>
+
+<script src="js/validacionacceso.js"></script>
+</html>
+

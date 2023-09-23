@@ -1,0 +1,388 @@
+#tablaInsumos tbody tr{
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    margin-left: 50%
+}
+
+.botones .boton{
+    width: 200px;
+}
+
+.btnVentas{
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.btnVentas button{
+    padding: 10px 40px;
+    /* Ajusta el padding para hacer los botones más largos */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    /* Ajusta el ancho de los botones */
+}
+.espacioEntreBotones {
+    width: 40px;
+    /* Ajusta el ancho del espacio según tus preferencias */
+}
+/*Estilo de los div*/
+
+.contForms{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconosRojos{
+    color: #E12424;
+}
+
+.iconosMorados{
+    color:#8a0000}
+
+input::placeholder {
+    padding-left: 8px;
+}
+
+input{
+    border-radius: 3px;
+    border: 1px solid #6d6d6d;
+}
+
+.input1 input{
+    width: 300px;
+    height: 50px;
+}
+
+.inputCantidad{
+    margin-left: 24vh;
+}
+
+.inputCantidad input{
+    width: 120vh;
+    height: 50px;
+}
+
+.input1 i{
+    font-size: 20px;
+}
+
+.parrafoGris{
+    color: gray;
+}
+
+.añadirImagen{
+    background-color: #6d6d6d;
+    height: 120px;
+    width: 200px;
+    border-radius: 3px;
+}
+
+.añadirImagen #imgPerfil{
+    text-align: center;
+}
+
+.contFormsAbajo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 8%;
+    margin-right: 2%;
+}
+
+#iconoEditar{
+    text-align: end;
+    margin-bottom: -28px;
+}
+
+.btnSinFondo {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#imgPerfil{
+    border-radius: 3px;
+}
+
+.contFormsAbajo1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-solid{
+    cursor: pointer;
+}
+/*Estilos de la tabla en Registrar ventas*/
+
+.cajaAbajoIzquierdo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    max-height: 200px;
+    overflow: hidden;
+    
+}
+
+#TablaOrdenProduccion td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo de las celdas de datos en las filas impares */
+#TablaOrdenProduccion tr:nth-child(odd) td {
+    background-color: #f2f2f2;
+}
+
+#TablaOrdenProduccion{
+    /* Altura máxima deseada para el tbody */
+    display: block;
+    /* Establece un contexto de bloque para el tbody */
+    overflow-y: scroll;
+    /* Habilita la barra de desplazamiento en el tbody */
+    max-height: 200px;
+    /* Altura máxima deseada para el tbody */
+    display: block;
+    /* Establece un contexto de bloque para el tbody */
+    overflow-y: scroll;
+    /* Habilita la barra de desplazamiento en el tbody */
+    border: 1px solid #ddd;
+}
+
+#TablaOrdenProduccion thead .trclass{
+    align-items: center;
+    background-color: #E12424;
+    color: white;
+    text-align: center;
+}
+
+#TablaOrdenProduccion #TStablaInsumos{
+    text-align: center;
+}
+
+#TablaOrdenProduccion tbody #TSDatos{
+    text-align: center;
+}
+
+
+#TablaOrdenProduccion th, #TablaOrdenProduccion td {
+    padding: 5px;
+    border: 0px solid #ddd;
+    text-align: center;
+}
+
+#BtnAgregarIn button{
+    width: 30%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #722F37;
+    color: white;
+    border: none;
+    text-align:center;
+
+}
+
+
+
+#BtnAgregarIn{
+    display: flex;
+    justify-content: center;
+}
+
+.btninsumos{
+    display: flex;
+    justify-content: space-around;
+    margin: 6% 20% 20%;
+    height: 40px;
+}
+
+.contenido2{
+    border-radius: 3px;
+    border: 1px solid #b9b9b9;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #f8f8f8;
+}
+
+/*Estilos para la ventana emergente*/
+
+.contVentana{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(216, 216, 216);
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 90px;
+}
+
+
+#dataTable{
+    border: 1px solid black;
+    width: 800px;
+}
+
+#dataTable tr th{
+    text-align: center;
+}
+
+#dataTable th{
+    width: 10%;
+}
+
+#dataTable td{
+    border-top: 0.5px solid rgb(41, 41, 41);
+}
+
+/*barra de busqueda venta emergente*/
+#searchInput{
+    border-radius: 20px;
+    width: 80%;
+}
+
+@media (max-width: 740px){
+    .barraLateral{
+        display: none;
+    }
+
+    .botones .boton{
+        display: none; /* Oculta el botón con la clase "botones" */
+    }
+
+    .barraPrincipal{
+        width: 358px;
+    }
+
+    .contenedor .contenido #titulo{
+        display: flex;
+        justify-content: center;
+        margin-top: -18px;
+    }
+
+    .tabla{
+        display: none;
+    }
+    
+    .Fecha{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .Fecha label{
+        font-size: 13px;
+    }
+    .Fecha input{
+        width: 110px;
+    }
+
+    .Fecha .Botones1{
+        display: flex;
+        margin-right: 20px;
+        align-items: end;
+    }
+
+    .Fecha .Botones1 button{
+        background-color: #8a0000;
+        border: none;
+        color: #ddd; border-radius: 10px;
+        width: 60px;
+        height: 30px;
+        
+    }
+
+    .tabla2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabla2 #tituloDatos{
+        color: #6d6d6d;
+        margin-top: 40px;
+    }
+
+    .tabla2 .tabla1{
+        margin-top: 10px;
+        border: 1px solid #6d6d6d;
+        border-radius: 10px;
+        margin-right: 20px;
+        padding: 10px;
+    }
+
+    #tabla3 thead{
+        text-align: center;
+    }
+    
+
+    #tabla3 tbody{
+        text-align: center;
+    }
+
+    #tabla3 tbody td{
+        padding: 2px;
+    }
+
+    .Botones{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+   #perfil{
+    margin-top: 50px;
+    display: flex;
+   }
+
+   #perfil #usuarioRegistrado{
+    margin-left: 10px;
+    margin-top: 7px;
+   }
+
+    #clock{
+        margin-left: 70px;
+    }
+    #clock a{
+        color:#722F37;
+    }
+    #clock a:hover{
+        color: #E12424;
+    }
+
+    
+}
+
+@media (min-width: 768px) {
+    .Fecha{
+        display: none;
+    }
+
+    .tabla2{
+        display: none;
+    }
+
+    .Botones{
+        display: none;
+    }
+
+    #perfil{
+        display: none;
+    }
+}
+
+@media (min-width: 780px) {
+    .tabla-2 {
+        display: none; /* Oculta el contenedor con la clase "tabla-2" */
+    }
+}
+
+

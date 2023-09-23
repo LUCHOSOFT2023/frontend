@@ -1,0 +1,265 @@
+.input1 input{
+  width: 300px;
+  height: 50px;
+}
+.Derecha{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.titulo{
+  text-align: center;
+  color: #000;
+}
+
+
+.invalid{
+  border:  1px solid #E12424;
+  box-shadow: 0 0 1px red;
+  outline: none;
+ }
+ .error{
+   color: #E12424;
+   display: block;
+   font-size: 15px;
+ 
+ }
+ .label {
+  display: block; /* Hace que el label sea un elemento en bloque para que aparezca por encima del input */
+  margin-bottom: 5px; /* Agrega un margen inferior para separar el label del input */
+}
+
+.input1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contenido2{
+  border-radius: 3px;
+  border: 1px solid #b9b9b9;
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 500px;
+  
+  background-color: #f8f8f8;
+  
+}
+
+.cajaBotones {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.cajaBotones button {
+  padding: 10px 40px;
+  /* Ajusta el padding para hacer los botones más largos */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 25%;
+  /* Ajusta el ancho de los botones */
+}
+
+#guardar {
+  background-color: #722F37;
+  color: white;
+  padding: 10px;
+  margin-right: 40px; /*--margin-right en el primer botón para dar espacio entre los botones. Esto solo afectará el margen derecho del primer botón, creando espacio entre ellos.-*/
+}
+
+#cancelar {
+  background-color: #E12424;
+  color: white;
+  padding: 10px;
+}
+
+/*---------*/
+
+td i{
+  cursor: pointer;
+}
+
+.contForms {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconosRojos {
+  color: #E12424;
+}
+
+.iconosMorados {
+  color: #722F37;
+}
+
+input::placeholder {
+  padding-left: 8px;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid #6d6d6d;
+}
+
+.input1 input {
+  width: 300px;
+  height: 50px;
+}
+
+.input1 select {
+  width: 300px;
+  height: 50px;
+}
+
+.input1 i {
+  font-size: 20px;
+}
+
+.parrafoGris {
+  color: gray;
+}
+
+.añadirImagen {
+  background-color: #e6e6e6;
+  height: 120px;
+  width: 200px;
+  border-radius: 3px;
+}
+
+.añadirImagen #imgPerfil {
+  text-align: center;
+}
+
+.contFormsAbajo {
+  margin-left: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#iconoEditar {
+  text-align: end;
+  margin-bottom: -28px;
+}
+
+.btnSinFondo {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+#imgPerfil {
+  border-radius: 3px;
+}
+
+
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+/*----------------------------------------------------------------*/
+
+.contForms{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconosRojos{
+  color: #E12424;
+}
+
+.iconosMorados{
+  color: #722F37;
+}
+
+input::placeholder {
+  padding-left: 8px;
+}
+
+input{
+  border-radius: 3px;
+  border: 1px solid #6d6d6d;
+}
+
+.input1 input{
+  width: 300px;
+  height: 50px;
+}
+
+.inputCantidad{
+  margin-left: 24vh;
+}
+
+.inputCantidad input{
+  width: 120vh;
+  height: 50px;
+}
+
+.input1 i{
+  font-size: 20px;
+}
+
+.parrafoGris{
+  color: gray;
+}
+
+.añadirImagen{
+  background-color: #6d6d6d;
+  height: 120px;
+  width: 200px;
+  border-radius: 3px;
+}
+
+.añadirImagen #imgPerfil{
+  text-align: center;
+}
+
+.contFormsAbajo{
+  display: flex;
+  justify-content: space-around;
+}
+
+#iconoEditar{
+  text-align: end;
+  margin-bottom: -28px;
+}
+
+.btnSinFondo {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+#imgPerfil{
+  border-radius: 3px;
+}
+
+#tablaInsumos td, #tablaInsumos th{
+  text-align: center;
+}
+
+
+.fa-solid{
+  cursor: pointer;
+}
+
+.fas{
+  cursor: pointer;
+}
+

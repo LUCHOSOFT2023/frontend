@@ -1,0 +1,17 @@
+echo "# Prototipo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Santi-223/Prototipo.git
+git push -u origin main
+
+Vincular el proyecto con git
+git init
+git config user.email "santitsj223munera@gmail.com"
+git config user.name "Santi-223"
+git add .
+git commit -m "Primer Commit"
+git branch -M main
+git remote add origin https://github.com/Santi-223/Prototipo.git
+git push -u origin main

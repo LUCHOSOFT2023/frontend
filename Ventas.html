@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <!--libreria js imprimir pdf-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <!-- Incluye la biblioteca de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluye la biblioteca de Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/dataTable.css">
+    <link rel="stylesheet" href="css/GestionVentas.css">
+    <title>LuchoSoft</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="barraPrincipal">
+        <div class="contenedor_1">
+
+            <div class="imagen">
+                <img src="archivos/imagenes/LuchoGod.png" height="45px" lenght="45px">
+            </div>
+
+            <div class="centrar">
+                <p>LuchoSoft</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="barraLateral">
+            <center>
+              <h3>Menú</h3>
+            </center>
+            <div class="sidebar">
+              <div class="module">
+                <p class="module-heading">Configuración <i class="bi bi-chevron-down arrow-icon"></i>
+                  <!-- Flecha hacia abajo --></p>
+                <ul class="options">
+                  <li onclick="window.location.href='gestionroles.html'">Roles</li>
+                  <li onclick="window.location.href='gestionPermisos.html'">Permisos</li>
+                </ul>
+              </div>
+              <div class="module">
+                <p class="module-heading">Usuarios <i class="bi bi-chevron-down arrow-icon"></i> <!-- Flecha hacia abajo -->
+                </p>
+                <ul class="options">
+                  <li onclick="window.location.href='gestionUsuario.html'">Usuarios</li>
+                </ul>
+              </div>
+              <div class="module">
+                <p class="module-heading">Compras <i class="bi bi-chevron-down arrow-icon"></i> <!-- Flecha hacia abajo -->
+                </p>
+                <ul class="options">
+                  <li onclick="window.location.href='CategoriaInsumos.html';">Categoria de insumos</li>
+                  <li onclick="window.location.href='Insumos.html';">Insumos</li>
+                  <li onclick="window.location.href='gestionProveedores.html'">Proveedores</li>
+                  <li onclick="window.location.href='gestionCompras.html'">Compras</li>
+                </ul>
+              </div>
+              <div class="module">
+                <p class="module-heading">Producción <i class="bi bi-chevron-down arrow-icon"></i> <!-- Flecha hacia abajo -->
+                </p>
+                <ul class="options">
+                  <li onclick="window.location.href='OrdenProduccion.html'">Orden de producción</li>
+                </ul>
+              </div>
+              <div class="module">
+                <p class="module-heading">Ventas <i class="bi bi-chevron-down arrow-icon"></i> <!-- Flecha hacia abajo --></p>
+                <ul class="options">
+                  <li onclick="window.location.href='categoriaProductos.html'">Categoria de productos</li>
+                  <li onclick="window.location.href='gestionProductos.html'">Productos</li>
+                  <li onclick="window.location.href='Clientes.html';">Clientes</li>
+                  <li onclick="window.location.href='pedidos.html'">Pedidos</li>
+                  <li onclick="window.location.href='Ventas.html'">Ventas</li>
+                </ul>
+              </div>
+              <div class="usuario" onclick="window.location.href='Inicio.html'">
+                <a class="usuario-link">
+                  <img src="archivos/imagenes/Profile.png" alt="">
+                  <span id="spanIcono">Nombre de Usuario</span>
+                </a>
+              </div>
+      
+      
+            </div>
+          </div>
+        <div class="contenido">
+            <center>
+                <div id="titulo">
+                    <h1>Gestión Ventas</h1>
+                </div>
+            </center>
+            <div class="botones">
+                <button class="boton botonAgregar" onclick="window.location.href='AgregarVenta.html'"><i class="fa-solid fa-plus">
+                </i> Venta </button>
+            </div>
+            <div class="tabla">
+                <table id="tablaInsumos" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th><i class="fa-solid fa-key iconosRojos"></i> ID</th>
+                            <th><i class="fa-solid fa-message iconosRojos"></i> Descripción</th>
+                            <th><i class="fa-solid fa-dollar-sign iconosRojos"></i> Precio de la venta</th>
+                            <th><i class="fa-solid fa-calendar-days iconosRojos"></i> Fecha de la venta</th>
+                            <th><i class="fa-solid fa-key iconosRojos"></i> ID Pedido</th>
+                            <th><i class="fa-solid fa-list-check iconosRojos"></i> Estado</th>
+                            <th><i class="fa-solid fa-gear iconosRojos"></i> Funciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Descripción...</td>
+                            <td>50.000</td>
+                            <td>15/01/23</td>
+                            <td>2</td>
+                            <td class="estado">Habilitado</td>
+                            <td>
+                                <i class="fas fa-toggle-on toggle-icon" onclick="cambiarEstado(this)"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Descripción...</td>
+                            <td>25.000</td>
+                            <td>16/01/23</td>
+                            <td>10</td>
+                            <td class="estado">Habilitado</td>
+                            <td>
+                                <i class="fas fa-toggle-on toggle-icon" onclick="cambiarEstado(this)"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Descripción...</td>
+                            <td>30.000</td>
+                            <td>17/01/23</td>
+                            <td>4</td>
+                            <td class="estado">Habilitado</td>
+                            <td>
+                                <i class="fas fa-toggle-on toggle-icon" onclick="cambiarEstado(this)"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Descripción...</td>
+                            <td>30.000</td>
+                            <td>17/01/23</td>
+                            <td>6</td>
+                            <td class="estado">Habilitado</td>
+                            <td>
+                                <i class="fas fa-toggle-on toggle-icon" onclick="cambiarEstado(this)"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Descripción...</td>
+                            <td>50.000</td>
+                            <td>17/01/23</td>
+                            <td>7</td>
+                            <td class="estado">Habilitado</td>
+                            <td>
+                                <i class="fas fa-toggle-on toggle-icon" onclick="cambiarEstado(this)"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Descripción...</td>
+                            <td>25.000</td>
+                            <td>17/01/23</td>
+                            <td>9</td>
+                            <td class="estado">Habilitado</td>
+                            <td>
+                                <i class="fas fa-toggle-on toggle-icon" onclick="cambiarEstado(this)"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>Descripción...</td>
+                            <td>50.000</td>
+                            <td>17/01/23</td>
+                            <td>3</td>
+                            <td class="estado">Habilitado</td>
+                            <td>
+                                <i class="fas fa-toggle-on toggle-icon" onclick="cambiarEstado(this)"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Descripción...</td>
+                            <td>30.000</td>
+                            <td>18/01/23</td>
+                            <td>1</td>
+                            <td class="estado">Habilitado</td>
+                            <td>
+                                <i class="fas fa-toggle-on toggle-icon" onclick="cambiarEstado(this)"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Descripción...</td>
+                            <td>20.000</td>
+                            <td>18/01/23</td>
+                            <td>6</td>
+                            <td class="estado">Habilitado</td>
+                            <td>
+                                <i class="fas fa-toggle-on toggle-icon" onclick="cambiarEstado(this)"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Descripción...</td>
+                            <td>50.000</td>
+                            <td>18/01/23</td>
+                            <td>5</td>
+                            <td class="estado">Habilitado</td>
+                            <td>
+                                <i class="fas fa-toggle-on toggle-icon" onclick="cambiarEstado(this)"></i>
+                            </td>
+                        </tr>
+                        <!-- Agregar más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="Fecha">
+                <div class="fecha-Inicio">
+                    <label for="fechaInicio">Fecha de inicio:</label><br>
+                    <input type="date" id="fechaInicio" name="fechaInicio">
+                </div>
+                <div class="fecha-Fin">
+                 <label for="fechaFin">Fecha de finalización:</label><br>
+                    <input type="date" id="fechaFin" name="fechaFin">   
+                </div> 
+                <div class="Botones1">
+                    <button onclick="filtrarPorFechasSeparadas()">Filtrar</button>
+                </div>
+            </div>
+            <div class="tabla2">
+                <div id="tituloDatos"><h4>Ventas del día:</h4></div>
+                <div class="tabla1">
+                    <div class="borde">
+                        <table id="tabla3" >
+                            <thead>
+                                <tr id="iconos">
+                                    <th><i class="fa-solid fa-key iconosRojos"></i></th>
+                                    <th><i class="fa-solid fa-message iconosRojos"></i></th>
+                                    <th><i class="fa-solid fa-dollar-sign iconosRojos"></i></th>
+                                    <th><i class="fa-solid fa-calendar-days iconosRojos"></i></th>
+                                    <th><i class="fa-solid fa-key iconosRojos"></i></th>
+                                </tr>
+                                <tr id="nombreDatos">
+                                    <th>Id</th>
+                                    <th>Descripción</th>
+                                    <th>Precio</th>
+                                    <th>Fecha</th>
+                                    <th>Pedido</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Descripción...</td>
+                                    <td>50.000</td>
+                                    <td>2023/01/15</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Descripción...</td>
+                                    <td>25.000</td>
+                                    <td>2023/01/16</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Descripción...</td>
+                                    <td>30.000</td>
+                                    <td>2023/02/17</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Descripción...</td>
+                                    <td>30.000</td>
+                                    <td>2023/02/25</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Descripción...</td>
+                                    <td>50.000</td>
+                                    <td>2023/03/17</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Descripción...</td>
+                                    <td>50.000</td>
+                                    <td>2023/05/20</td>
+                                    <td>7</td>
+                                </tr>
+                                <!-- Agregar más filas según sea necesario -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="Botones">
+                <div class="botones1 ">
+                    <button class="boton boton-generar" onclick="generarPDF()">
+                    <i class="fa-solid fa-file-pdf"></i>Generar reporte</button>
+                </div>   
+            </div>
+            <div id="perfil" >
+                <div id="imgPerfil"><img src="archivos/imagenes/Profile.png" height="30vh" lenght="30vh"></div>
+                <div id="usuarioRegistrado"><h6>Administrador</h6></div>
+                <div id="clock"><a href="accso.html">Cerrar sesión</a></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var table = $('table.display').DataTable({
+                lengthMenu: [5], // Establece el número de registros a mostrar en el dropdown
+                pageLength: 5, // Muestra solo 5 registros por página
+                paging: true, // Activa la paginación
+                searching: true, // Activa la búsqueda
+                ordering: true, // Activa la ordenación
+                info: true, // Muestra la información de paginación
+            });
+
+            $('.dataTables_length').hide();
+            $('.dataTables_info').hide();
+            $('.dataTables_filter').addClass('pull-left');
+
+        });
+
+    </script>
+    <script src="js/gestionVentas.js"></script>
+    <script src="js/Menu.js"></script>
+    <script src="js/dataTable.js"></script>
+    <script src="js/gestionCategoriaInsumos.js"></script>
+
+</html>
+
+</body>
+
+</html>

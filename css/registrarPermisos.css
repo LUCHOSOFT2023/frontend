@@ -1,0 +1,59 @@
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 50px;
+
+  }
+
+  .icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .key-icon::before {
+    content: "\f084"; /* Unicode for key icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .user-icon::before {
+    content: "\f007"; /* Unicode for user icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+   
+  }
+
+  #contenedorsitos{
+    display: flex;
+  }
+
+  #contenedorsito{
+    margin-left: 270px;
+    margin-top: -10px;
+  }
+
+  .botonsito{
+    display: flex;
+    margin-left: 320px;
+    margin-top: 10px;
+    padding: 50px 50px;
+  }
+
+
+  .kaka {
+    display: flex;
+    flex-direction: column;
+      
+
+    margin-right: 60px;
+
+      
+    }

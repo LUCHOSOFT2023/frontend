@@ -1,0 +1,228 @@
+.contForms{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconosRojos{
+    color: #E12424;
+}
+
+.iconosMorados{
+    color:#8a0000}
+
+input::placeholder {
+    padding-left: 8px;
+}
+
+input{
+    border-radius: 3px;
+    border: 1px solid #6d6d6d;
+}
+
+.input1 input{
+    width: 250px;
+    height: 40px;
+}
+
+.input1 textarea{
+    height: 40px;
+    width: 250px;
+}
+
+.inputCantidad{
+    margin-left: 24vh;
+}
+
+.inputCantidad input{
+    width: 120vh;
+    height: 50px;
+}
+
+.input1 i{
+    font-size: 20px;
+}
+
+.parrafoGris{
+    color: gray;
+}
+
+.añadirImagen{
+    background-color: #6d6d6d;
+    height: 120px;
+    width: 200px;
+    border-radius: 3px;
+}
+
+.añadirImagen #imgPerfil{
+    text-align: center;
+}
+
+
+
+#iconoEditar{
+    text-align: end;
+    margin-bottom: -28px;
+}
+
+.btnSinFondo {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#imgPerfil{
+    border-radius: 3px;
+}
+
+
+#TablaOrdenProduccion td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo de las celdas de datos en las filas impares */
+#TablaOrdenProduccion tr:nth-child(odd) td {
+    background-color: #f2f2f2;
+}
+
+
+
+#BtnAgregarIn button{
+    width: 26%;
+    height: 35px;
+    border-radius: 10px;
+    font-family: Arial;
+    background-color: #E12424;
+    color: white;
+    border: none;
+    float: left;
+}
+#TablaOrdenProduccion{
+    /* Altura máxima deseada para el tbody */
+    display: block;
+    /* Establece un contexto de bloque para el tbody */
+    overflow-y: scroll;
+    /* Habilita la barra de desplazamiento en el tbody */
+    max-height: 200px;
+    /* Altura máxima deseada para el tbody */
+    display: block;
+    /* Establece un contexto de bloque para el tbody */
+    overflow-y: scroll;
+    /* Habilita la barra de desplazamiento en el tbody */
+    border: 1px solid #ddd;
+}
+
+#TablaOrdenProduccion thead .trclass{
+    align-items: center;
+    background-color: #E12424;
+    color: white;
+    text-align: center;
+}
+
+#TablaOrdenProduccion #TStablaInsumos{
+    text-align: center;
+}
+
+#TablaOrdenProduccion tbody #TSDatos{
+    text-align: center;
+}
+
+
+#TablaOrdenProduccion th, #TablaOrdenProduccion td {
+    padding: 5px;
+    border: 0px solid #ddd;
+    text-align: center;
+}
+
+#BtnAgregarIn{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    right: 160px;
+    margin-left: 100px;
+}
+#BtnAgregarIn2{
+ position: absolute;
+ width: 80%;
+ text-align: center;
+
+}
+
+
+.btninsumos{
+    display: flex;
+    justify-content: space-around;
+    margin: 6% 20% 20%;
+    height: 40px;
+}
+
+.botonAgregar {
+    margin-right: 82px;
+    background-color: #E12424;
+    color: white;
+    border: none;
+    width: 20%;
+    border-radius: 2px;
+}
+
+.boton-generar {
+    background-color: #722F37;
+    color: white;
+    border: none;
+    width: 20%;
+    border-radius: 2px;
+}
+
+
+.cajaAbajoIzquierdo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    max-height: 200px;
+    overflow: hidden;
+    
+}
+
+.contVentana{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(180, 175, 175);
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#dataTable tr th{
+    text-align: center;
+    
+}
+
+#dataTable th{
+    width: 20%;
+}
+.TablaOrdenProduccion{
+  float: left;  
+}
+
+.TablaOrdenProduccion{
+    float: left;
+
+}
+.cajaAbajoIzquierdo2{
+    float: left;
+    margin-left: 50px;
+}
+
+.botonAgregar{
+ border-radius: 10px;
+ height: 40px;
+ display: flex;
+ justify-content:left;
+ margin-left: 80px;
+}
+

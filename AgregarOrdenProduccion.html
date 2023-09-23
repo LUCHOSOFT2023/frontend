@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+  <!-- Incluye la biblioteca de Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Incluye la biblioteca de Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/GestionOrdenProduccion.css">
+  <link rel="stylesheet" href="css/dataTable.css">
+  <link rel="stylesheet" href="css/Menu.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <title>LuchoSoft</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!--link de FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@5.15.4/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="barraPrincipal">
+    <div class="contenedor_1">
+
+      <div class="imagen">
+        <img src="archivos/imagenes/LuchoGod.png" height="45px" lenght="45px">
+      </div>
+
+      <div class="centrar">
+        <p>LuchoSoft</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="barraLateral">
+      <center>
+        <h3>Menú</h3>
+      </center>
+      <div class="sidebar">
+        <div class="module">
+          <p class="module-heading">Configuración <i class="bi bi-chevron-down arrow-icon"></i>
+            <!-- Flecha hacia abajo --></p>
+          <ul class="options">
+            <li onclick="window.location.href='gestionroles.html'">Roles</li>
+            <li onclick="window.location.href='gestionPermisos.html'">Permisos</li>
+          </ul>
+        </div>
+        <div class="module">
+          <p class="module-heading">Usuarios <i class="bi bi-chevron-down arrow-icon"></i> <!-- Flecha hacia abajo -->
+          </p>
+          <ul class="options">
+            <li onclick="window.location.href='gestionUsuario.html'">Usuarios</li>
+          </ul>
+        </div>
+        <div class="module">
+          <p class="module-heading">Compras <i class="bi bi-chevron-down arrow-icon"></i> <!-- Flecha hacia abajo -->
+          </p>
+          <ul class="options">
+            <li onclick="window.location.href='CategoriaInsumos.html';">Categoria de insumos</li>
+            <li onclick="window.location.href='Insumos.html';">Insumos</li>
+            <li onclick="window.location.href='gestionProveedores.html'">Proveedores</li>
+            <li onclick="window.location.href='gestionCompras.html'">Compras</li>
+          </ul>
+        </div>
+        <div class="module">
+          <p class="module-heading">Producción <i class="bi bi-chevron-down arrow-icon"></i> <!-- Flecha hacia abajo -->
+          </p>
+          <ul class="options">
+            <li onclick="window.location.href='OrdenProduccion.html'">Orden de producción</li>
+          </ul>
+        </div>
+        <div class="module">
+          <p class="module-heading">Ventas <i class="bi bi-chevron-down arrow-icon"></i> <!-- Flecha hacia abajo --></p>
+          <ul class="options">
+            <li onclick="window.location.href='categoriaProductos.html'">Categoria de productos</li>
+            <li onclick="window.location.href='gestionProductos.html'">Productos</li>
+            <li onclick="window.location.href='Clientes.html';">Clientes</li>
+            <li onclick="window.location.href='pedidos.html'">Pedidos</li>
+            <li onclick="window.location.href='Ventas.html'">Ventas</li>
+          </ul>
+        </div>
+        <div class="usuario" onclick="window.location.href='Inicio.html'">
+          <a class="usuario-link">
+            <img src="archivos/imagenes/Profile.png" alt="">
+            <span id="spanIcono">Nombre de Usuario</span>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="contenido">
+      <div class="contenido2">
+        <br>
+        <center>
+          <div id="titulo">
+            <h1>Agregar Orden de Producción</h1>
+          </div>
+        </center>
+        <form>
+          <div class="contForms">
+            <div class="contIzquierda">
+              <div class="input1">
+                <p class="parrafoGris"><i class="fa-solid fa-key iconosRojos"></i> ID orden de producción</p>
+                <input class="input-field" type="text" name="IdOrdenProd"placeholder="001" id="IdOrdenProd">
+              </div>
+              <br>
+            </div>
+            <div class="contDerecha">
+              <div class="input1">
+                <p><i class="fa-solid fa-message iconosRojos"></i> Descripción</p>
+                <textarea name="DescOrden" id="" cols="30" rows="2" class="input-field2"
+                  placeholder="Descripción de producción"></textarea>
+                <!--<input class="input-field2" type="text" placeholder="Esta orde de producción...">-->
+              </div>
+            </div>
+            <div class="contDerecha">
+              <div class="input1">
+                <p><i class="fa-solid fa-calendar-days iconosRojos"></i> Seleccionar Fecha</p>
+                <input class="input-field2" type="date" name="FechaOrden" id="FechaOrden">
+              </div>
+            </div>
+          </div>
+        </form> 
+        <div class="cajaAbajo">
+          <div class="cajaAbajoIzquierdo">
+            <table id="TablaOrdenProduccion">
+              <thead>
+                <tr class="trclass">
+                  <th colspan="5"><i>Insumos agregados</i></th>
+                </tr>
+                <tr id="TStablaInsumos">
+                  <th id="StablaInsumos"><i class="fa-solid fa-key iconosRojos"></i> ID</th>
+                  <th id="StablaInsumos"><i class="fa-solid fa-image iconosRojos"></i> Imagen</th>
+                  <th id="StablaInsumos"><i class="fa-solid fa-font iconosRojos"></i> Nombre</th>
+                  <th id="StablaInsumos"><i class="fa-solid fa-lightbulb iconosRojos"></i> Estado</th>
+                  <th id="StablaInsumos"><i class="fa-solid fa-list iconosRojos"></i> Cantidad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="TSDatos">
+                  <td>1</td>
+                  <td><img src="ruta-a-tu-imagen-1.jpg" width="50"></td>
+                  <td>Insumo 1</td>
+                  <td>Habilitado</td>
+                  <td>5</td>
+                </tr>
+                <tr id="TSDatos">
+                  <td>5</td>
+                  <td><img src="ruta-a-tu-imagen-1.jpg" width="50"></td>
+                  <td>Insumo 4</td>
+                  <td>Habilitado</td>
+                  <td>4</td>
+                </tr>
+                <tr id="TSDatos">
+                  <td>7</td>
+                  <td><img src="ruta-a-tu-imagen-1.jpg" width="50"></td>
+                  <td>Insumo 2</td>
+                  <td>Habilitado</td>
+                  <td>6</td>
+                </tr>
+                <tr id="TSDatos">
+                  <td>6</td>
+                  <td><img src="ruta-a-tu-imagen-1.jpg" width="50"></td>
+                  <td>Insumo 3</td>
+                  <td>Habilitado</td>
+                  <td>8</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="divBoton">
+          <div id="BtnAgregarIn">
+            <button class="boton boton-generar" id="openPopupBtn">+ Insumos</button>
+            <div id="popup" class="contVentana">
+              <h3>Selecciona los insumos a insertar:</h3>
+              <input type="text" id="searchInput" placeholder="Buscar...">
+              <br>
+              <br>
+              <table id="dataTable">
+                  <tr>
+                      <th><i class="fa-solid fa-key iconosRojos"></i> ID</th>
+                      <th><i class="fa-solid fa-image iconosRojos"></i> Imagen</th>
+                      <th><i class="fa-solid fa-font iconosRojos"></i> Nombre</th>
+                      <th><i class="fa-solid fa-font iconosRojos"></i> Cantidad</th>
+                      <th><i class="fa-solid fa-font iconosRojos"></i> Stock</th>
+                      <th><i class="fa-solid fa-utensils iconosRojos"></i> Categoría</th>
+                      <th><i class="fa-solid fa-list iconosRojos"></i> Seleccionar</th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td><img src="ruta-a-tu-imagen-1.jpg" width="50"></td>
+                      <td>Manzana</td>
+                      <td><input type="number" style="width: 37px; height: 20px;" id="cantidad"></td>
+                      <td>300</td>
+                      <td>Frutas</td>
+                      <td><input type="checkbox" id="eleccion"></td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td><img src="ruta-a-tu-imagen-1.jpg" width="50"></td>
+                      <td>Arroz</td>
+                      <td><input type="number" style="width: 37px; height: 20px;" id="cantidad"></td>
+                      <td>200</td>
+                      <td>Granos</td>
+                      <td><input type="checkbox" id="eleccion"></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><img src="ruta-a-tu-imagen-1.jpg" width="50"></td>
+                    <td>Papa</td>
+                    <td><input type="number" style="width: 37px; height: 20px;" id="cantidad"></td>
+                    <td>500</td>
+                    <td>Granos</td>
+                    <td><input type="checkbox" id="eleccion"></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><img src="ruta-a-tu-imagen-1.jpg" width="50"></td>
+                  <td>aguacate</td>
+                  <td><input type="number" style="width: 37px; height: 20px;" id="cantidad"></td>
+                  <td>600</td>
+                  <td>Granos</td>
+                  <td><input type="checkbox" id="eleccion"></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><img src="ruta-a-tu-imagen-1.jpg" width="50"></td>
+                <td>cebolla</td>
+                <td><input type="number" style="width: 37px; height: 20px;" id="cantidad"></td>
+                <td>100</td>
+                <td>Granos</td>
+                <td><input type="checkbox" id="eleccion"></td>
+              </tr>
+                  <!-- Agregar más filas aquí -->
+              </table>
+              <br>
+              <br>
+              <button type="submit" id="insertBtn" onclick="Agregar()">Agregar</button>
+              <button id="cancelBtn" onclick="CancelarV()">Cancelar</button>
+            </div>
+          </div>
+        </div>
+        <div class="btninsumos">
+          <button class="boton boton-generar" onclick="Registrar()">Guardar</button>
+          <div class="espacioEntreBotones"></div>
+          <button class="boton botonAgregar" onclick="Cancelar()">Cancelar</button>
+        </div>
+        <br>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/ValidacionOrdenProducción.js"></script>
+
+  <script src="js/Menu.js"></script>
+  <script src="js/gestionOrdenProduccion.js"></script>
+
+</html>
+
+</body>
+
+</html>

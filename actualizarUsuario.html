@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/dataTable.css" />
+    <link rel="stylesheet" href="css/gestionDeInsumos.css">
+    <link rel="stylesheet" href="css/EstilosJuanda.css">
+    <link rel="stylesheet" href="css/registrarUsuarios.css">
+    <!-- Incluye la biblioteca de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluye la biblioteca de Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>LuchoSoft</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="barraPrincipal">
+        <div class="contenedor_1">
+
+            <div class="imagen">
+                <img src="archivos/imagenes/LuchoGod.png" height="45px" lenght="45px">
+            </div>
+
+            <div class="centrar">
+                <p>LuchoSoft</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="barraLateral">
+            <center>
+                <h3>Menú</h3>
+            </center>
+            <div class="sidebar">
+                <div class="module">
+                    <p class="module-heading">Configuración <i class="bi bi-chevron-down arrow-icon"></i>
+                        <!-- Flecha hacia abajo --></p>
+                    <ul class="options">
+                        <li onclick="window.location.href='gestionroles.html'">Roles</li>
+                        <li onclick="window.location.href='gestionPermisos.html'">Permisos</li>
+                    </ul>
+                </div>
+                <div class="module">
+                    <p class="module-heading">Usuarios <i class="bi bi-chevron-down arrow-icon"></i>
+                        <!-- Flecha hacia abajo -->
+                    </p>
+                    <ul class="options">
+                        <li onclick="window.location.href='gestionUsuario.html'">Usuarios</li>
+                    </ul>
+                </div>
+                <div class="module">
+                    <p class="module-heading">Compras <i class="bi bi-chevron-down arrow-icon"></i>
+                        <!-- Flecha hacia abajo -->
+                    </p>
+                    <ul class="options">
+                        <li onclick="window.location.href='CategoriaInsumos.html';">Categoria de insumos</li>
+                        <li onclick="window.location.href='Insumos.html';">Insumos</li>
+                        <li onclick="window.location.href='gestionProveedores.html'">Proveedores</li>
+                        <li onclick="window.location.href='gestionCompras.html'">Compras</li>
+                    </ul>
+                </div>
+                <div class="module">
+                    <p class="module-heading">Producción <i class="bi bi-chevron-down arrow-icon"></i>
+                        <!-- Flecha hacia abajo -->
+                    </p>
+                    <ul class="options">
+                        <li onclick="window.location.href='OrdenProduccion.html'">Orden de producción</li>
+                    </ul>
+                </div>
+                <div class="module">
+                    <p class="module-heading">Ventas <i class="bi bi-chevron-down arrow-icon"></i>
+                        <!-- Flecha hacia abajo --></p>
+                    <ul class="options">
+                        <li onclick="window.location.href='categoriaProductos.html'">Categoria de productos</li>
+                        <li onclick="window.location.href='gestionProductos.html'">Productos</li>
+                        <li onclick="window.location.href='Clientes.html';">Clientes</li>
+                        <li onclick="window.location.href='pedidos.html'">Pedidos</li>
+                        <li onclick="window.location.href='Ventas.html'">Ventas</li>
+                    </ul>
+                </div>
+                <div class="usuario" onclick="window.location.href='Inicio.html'">
+                    <a class="usuario-link">
+                        <img src="archivos/imagenes/Profile.png" alt="">
+                        <span id="spanIcono">Nombre de Usuario</span>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="contenido2">
+                <br>
+                <center>
+                    <div id="titulo">
+                        <h1>Modificar Usuario</h1>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </center>
+                <div id="contenedorsitos">
+                    <div id="contenedorsito">
+            
+                        <div class="input-container">
+                            <!---Crupo:nombre-->
+                            <div class="formulario__grupo" id="grupo__nombre">
+                                <label for="nombre"> <i class="fa-solid fa-font iconosRojos"></i>Nombre</label>
+                                <div class="formulario__grupo-input">
+                                    <input class="input-field" type="text" name="nombre" id="nombre">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="input-container">
+                            <!---Crupo:telefono-->
+                            <div class="formulario__grupo" id="grupo__telefono">
+                                <label for="telefono"><i class="fa-solid fa-phone iconosRojos"></i> Telefono</label>
+                                <div class="formulario__grupo-input">
+                                    <input class="input-field" type="text" name="telefono" id="telefono">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <!---Crupo:direccion-->
+                            <div class="formulario__grupo" id="grupo__direccion">
+                                <label for="direccion"><i class="fa-sharp fa-solid fa-location-dot iconosRojos"></i>
+                                    Dirección</label>
+                                <div class="formulario__grupo-input">
+                                    <input class="input-field" type="text" name="direccion" id="direccion">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="input-container">
+                            <!---Crupo:correo-->
+                            <div class="formulario__grupo" id="grupo__correo">
+                                <label for="correo"><i class="fa-solid fa-envelope iconosRojos"></i>correo</label>
+                                <div class="formulario__grupo-input">
+                                    <input class="input-field" type="text" name="correo" id="correo">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="input-container">
+                            <div class="eo">
+                                <p class=""><i class="fas fa-user-shield iconosRojos"></i> Rol</p>
+                                <select id="categoria_producto" class="input-field">
+                                    <option value="0">Seleccionar Rol</option>
+                                    <option value="administrador">Administrador</option>
+                                    <option value="cajero">Cajero</option>
+                                    <option value="mesero">Mesero</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    ㅤ
+                    <div id="cosas">
+                        <center>
+                            <br>
+                            <br>
+                            <div class="input1 divImagen">
+                                <p><i class="fa-solid fa-image iconosRojos"></i> URL Imagen</p>
+                                <img id="imagen_i"
+                                    src="https://tse2.mm.bing.net/th?id=OIP.U8HnwxkbTkhoZ_DTf7sCSgHaHa&pid=Api&P=0&h=180"
+                                    width="200px">
+                                <br>
+                                <br>
+                                <input onchange="cargarImagen()" id="imagen_insumo" class="input-field2" type="text"
+                                    placeholder="URL de la imagen">
+                            </div>
+                        </center>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="botonsito">
+                    <button class="boton boton-generar" onclick="modificar()" ><i
+                            class=""></i> Guardar</button>ㅤㅤㅤㅤㅤ
+                    <button onclick="window.location.href='gestionUsuario.html' " class="boton botonAgregar">
+                        <iclass=""></i> Cancelar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('table.display').DataTable();
+        });
+    </script>
+    <script src="js/Menu.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/form.js"></script>
+    <script src="js/gestionDeInsumos.js"></script>
+    <script type="text/javascript" src="js/dataTable.js"></script>
+
+</html>
+
+</body>
+
+</html>

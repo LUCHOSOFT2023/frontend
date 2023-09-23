@@ -1,0 +1,112 @@
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 50px;
+  }
+
+  .icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .key-icon::before {
+    content: "\f084"; /* Unicode for key icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .user-icon::before {
+    content: "\f007"; /* Unicode for user icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+   
+  }
+
+  #contenedorsitos{
+    display: flex;
+  }
+
+  #contenedorsito{
+    margin-left: 200px;
+    margin-top: -50px;
+  }
+
+  .botonsito{
+    display: flex;
+    margin-left: 320px;
+    margin-top: -30px;
+    padding: 50px 50px;
+  }
+  .divproveedores {
+    max-width: 520px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+   
+}
+
+.divproveedores h2 {
+    margin-bottom: 0px;
+
+}
+
+.divproveedores form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body{
+  justify-content: center;
+}
+
+#botoms{
+  margin-left: 270px;
+}
+
+.contenido2{
+  border-radius: 3px;
+  border: 1px solid #b9b9b9;
+  margin-left: 150px;
+  margin-right: 50px;
+  background-color: #f8f8f8;
+  height: 720px;
+  width: 730px;
+  border-radius: 18px;
+}
+
+.fa-font{
+  margin-left: -90px;
+
+}
+
+.fa-location-dot{
+  margin-left: -90px;
+
+}
+
+.key-icon{
+  margin-left: -90px;
+
+}
+
+.fa-phone{
+  margin-left: -90px;
+
+}
+
+
+
+
+
